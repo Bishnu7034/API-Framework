@@ -1,1 +1,13 @@
+name: regression suite
+on: 
+  push:
+    branches:
+    -main
+  pull_request:
+    branches:
+     -main
 
+jobs:
+  run_tests:
+    run_on: ubuntu_latest
+     
