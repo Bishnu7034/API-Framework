@@ -27,7 +27,7 @@ jobs:
       run: |
         pytest -s --html=report.html -self-contained-html
     - name: Upload report
-      uses: action/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: pytest-report
         path: report.html
