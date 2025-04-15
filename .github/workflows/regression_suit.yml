@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        pytest -s --html=report.html -self-contained-html
+        pytest -s --html=reports.html -self-contained-html
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
